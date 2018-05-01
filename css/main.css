@@ -2,14 +2,14 @@
  * Estilos del proyecto
  */
 
- body {
+body {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     margin: 0;
  }
 
 /* Navegacion */
- nav.navbar {
+nav.navbar {
     background-color: #2c3e50;
     color: white;
     display: inline-block;
@@ -20,7 +20,7 @@
     text-transform: uppercase;
     width: 100%;
     z-index: 10; 
- }
+}
 
 nav.navbar div.nav-container {
     margin: 0 14.5em;
@@ -35,11 +35,11 @@ nav.navbar div.nav-container a.brand {
 }
 
 a.menu-link {
-    text-decoration: none;
     color: white;
     cursor: pointer;
-    padding: 1em;
     margin-right: 0.2em;
+    padding: 1em;
+    text-decoration: none;
  }
 
 a.menu-link:hover {
@@ -52,29 +52,29 @@ a.menu-link:active {
 
 div#menu {
     display: inline-block;
+    letter-spacing: .06em;
     padding-left: 25.28em;  
     position: relative;
     top: -0.38em;
-    letter-spacing: .06em;
 }
 
 /* Header */
 
 header {
-    height: 49em;
     background-color: #18bc9c;
-    padding-top: 6em;
     box-sizing: border-box;
- }
+    height: 49em;
+    padding-top: 6em;  
+}
 
 
  h1 {
     color: white;
-    font-size: 4.75em;
-    margin-top: 0.4em;
-    margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
- }
+    font-size: 4.75em;
+    margin-bottom: 0;
+    margin-top: 0.4em;
+}
 
  h2 {
     font-family: 'Montserrat', sans-serif;
@@ -107,13 +107,13 @@ header {
 }
 
 hr.star-dark, hr.star-light {
-    max-width: 15em;
-    padding: 0;
-    text-align: center;
     border: none;
     border-top: solid .25em;
     margin-top: 1.7em;
     margin-bottom: 2.4em;
+    max-width: 15em;
+    padding: 0;
+    text-align: center;
 }
 
 hr.star-light {
@@ -125,25 +125,25 @@ hr.star-dark {
 }
 
 hr.star-dark:after, hr.star-light:after {
-    position: relative;
-    top: -.6em;
-    display: inline-block;
-    padding: 0 .25em;
     content: "\f005";
+    display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
     font-size: 1.8em;
+    padding: 0 .25em;
+    position: relative;
+    top: -.6em;
     z-index: 0;
 }
 
 hr.star-light:after {
-    color: white;
     background-color: #18bc9c;
+    color: white;
 }
 
 hr.star-dark:after {
-    color: #2c3e50;
     background-color: white;
+    color: #2c3e50;
 }
 
  .container {
@@ -151,8 +151,71 @@ hr.star-dark:after {
  }
 
  .header-container {
-    padding: 0 20%;
-    width: 60%;
-    text-align: center;
     margin-top: 6.6em;
+    padding: 0 20%;
+    text-align: center;
+    width: 60%;
 }
+
+/* Portfolio */
+
+div.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-container {
+    padding: 0 15em;
+}
+
+article#grid {
+    padding-top: 0.6em;
+}
+
+#grid section {
+    width: 100%;
+}
+
+section.row {
+    margin-bottom: 2em;
+}
+
+section.last-row {
+    margin-bottom: 0;
+}
+
+#grid section div.portfolio-item {
+    display: inline-block;
+    position: relative;
+    text-align: initial;
+    width: 31%;
+}
+
+.left {
+    margin-right: 2em;
+}
+
+.center {
+    margin-right: 0;
+}
+
+.right {
+    margin-left: 2em;
+}
+
+.portfolio-item .mask {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.portfolio-item .mask:hover {
+    background:  rgba(24,188,156,0.8);
+    color: white;
+    content: "\f005";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
